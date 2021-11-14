@@ -45,7 +45,8 @@ int main()
 
         if(glewInit() == GLEW_OK)
         {
-            std::cout<<"GLEW initialization successful"<<std::endl;
+            std::cout<<"GLEW initialization successful"<<'\n';
+            std::cout<<glGetString(GL_VERSION)<<'\n';
         }
         else
         {
