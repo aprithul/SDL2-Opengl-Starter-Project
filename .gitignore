@@ -1038,3 +1038,8 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+/include/GL
+/include/SDL2
+/lib/GL
+/lib/SDL2

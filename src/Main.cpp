@@ -4,8 +4,6 @@
 
 #ifdef __APPLE__
 #include <OpenGL/gl.h>
-#elif _WIN64
-#include "gl.h"
 #endif
 
 // user headers
@@ -29,6 +27,10 @@ void set_sdl_gl_attributes()
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
     
 }
+
+#ifdef main
+#undef main
+#endif
 
 int main()
 {
