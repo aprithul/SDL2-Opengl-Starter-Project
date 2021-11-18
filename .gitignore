@@ -37,3 +37,4 @@
 #sdl2 and GLEW directory
 GL
 SDL2
+build/debug/*
